@@ -26,6 +26,9 @@ const LandingPage = () => {
     // <section>
     //     <SearchBar />git rem
     // </section>
+    // <section>
+    //     <Features />
+    // </section>
   );
 };
 

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const DesktopNavbar = styled.nav`
   display: flex;
   flex-flow: no nowrap;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: center;
 
   background: f7f7f7;
@@ -16,6 +16,7 @@ const DesktopNavbar = styled.nav`
   .logo {
     font-size: 4vh;
     font-weight: bold;
+    margin-left: 25px;
   }
 
   .nav-links {
@@ -78,7 +79,8 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <button className="button">Sign Up</button>
+      <button className="button">SIGN UP</button>
+      <button className="button">MENU</button>
     </DesktopNavbar>
   );
 };
