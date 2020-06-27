@@ -14,7 +14,7 @@ const DesktopNavbar = styled.nav`
   height: 8vh;
 
   .logo {
-    font-size: 3vh;
+    font-size: 4vh;
     font-weight: bold;
   }
 
