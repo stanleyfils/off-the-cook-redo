@@ -24,7 +24,7 @@ const LandingPage = () => {
       <HeaderImage src={BannerImage} alt="animated chefs cooking" />
     </Container>
     // <section>
-    //     <SearchBar />
+    //     <SearchBar />git rem
     // </section>
   );
 };
