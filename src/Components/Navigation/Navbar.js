@@ -31,10 +31,27 @@ const DesktopNavbar = styled.nav`
   }
 
   /* text decoration none removes underline */
-  .links {
-    color: white;
-    font-size: 2.5vh;
+  .link {
+    color: black;
+    font-size: 2vh;
     text-decoration: none;
+  }
+
+  .button {
+    background-image: linear-gradient(to top left, #ff8a00, #e52e71) !important;
+    color: #fff !important;
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 700;
+    border: 0;
+    border-radius: 8px !important;
+    white-space: nowrap;
+    padding: 1rem 1.5rem;
+    line-height: 1.4;
+    text-align: center;
+    transition: 0.07s;
+    position: relative;
+    text-decoration: none !important;
   }
 `;
 
@@ -61,7 +78,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <button>Sign Up</button>
+      <button className="button">Sign Up</button>
     </DesktopNavbar>
   );
 };
