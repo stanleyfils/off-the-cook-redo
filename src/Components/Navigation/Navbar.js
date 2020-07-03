@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+// why use classes within styled components??
+
 const DesktopNavbar = styled.nav`
   display: flex;
   flex-flow: no nowrap;
@@ -14,7 +16,7 @@ const DesktopNavbar = styled.nav`
   height: 8vh;
 
   .logo {
-    font-size: 4vh;
+    font-size: 3.5vh;
     font-weight: bold;
     margin-left: 25px;
   }
@@ -38,7 +40,7 @@ const DesktopNavbar = styled.nav`
     text-decoration: none;
   }
 
-  .button {
+  .signup-button {
     background-image: linear-gradient(to top left, #ff8a00, #e52e71) !important;
     color: #fff !important;
     display: inline-block;
@@ -53,7 +55,28 @@ const DesktopNavbar = styled.nav`
     transition: 0.07s;
     position: relative;
     text-decoration: none !important;
+    position: absolute;
+    left: 950px;
   }
+`;
+
+const MenuButton = styled.button`
+  background-image: linear-gradient(to top left, #ff8a00, #e52e71) !important;
+  color: #fff !important;
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 700;
+  border: 0;
+  border-radius: 8px !important;
+  white-space: nowrap;
+  padding: 1rem 1.5rem;
+  line-height: 1.4;
+  text-align: center;
+  transition: 0.07s;
+  position: relative;
+  text-decoration: none !important;
+  position: absolute;
+  left: 1100px;
 `;
 
 const Navbar = () => {
@@ -79,8 +102,8 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <button className="button">SIGN UP</button>
-      <button className="button">MENU</button>
+      <button className="signup-button">SIGN UP</button>
+      <MenuButton>MENU</MenuButton>
     </DesktopNavbar>
   );
 };
